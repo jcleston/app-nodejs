@@ -4,10 +4,11 @@ const { Router } = require("express");
 // Criando/Instanciando a rota
 const routes = new Router();
 
-// Criando a rota hello
-routes.get("/", (req, res) => {
-    return res.json({ message: "Hello" });
-});
+// Importando a classe UsuariosController
+const usuarios = require("./app/controllers/UsuariosControllers");
+
+// Criando a rota index para usuarios
+routes.get("/usuarios", usuarios.index);
 
 // Exportando as rotas
 module.exports = routes;
