@@ -7,10 +7,10 @@ const express = require("express");
 const routes = require("./routes");
 
 // Criando a class App
-class App{
+class App {
 
     //Criando o construtor
-    constructor(){
+    constructor() {
         // Adicionando a propriedade server
         this.server = express();
 
@@ -23,7 +23,7 @@ class App{
 
     // Criando o método middleware
     // Ele faz a camada entre o App e o express, interceptando e controlando as requisições
-    middlewares(){
+    middlewares() {
 
         // Para manipular json
         this.server.use(express.json());
@@ -31,7 +31,7 @@ class App{
     }
 
     // Para manipular as rotas
-    routes(){
+    routes() {
 
         // Para usar as rotas
         this.server.use(routes);
