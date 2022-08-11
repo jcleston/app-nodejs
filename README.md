@@ -70,6 +70,20 @@ $ yarn add sucrase -D
 ## eslint
 ```shell
 $ yarn add eslint -D
+$ yarn eslint --init
+
+Configuração do eslint na sequencia:
+y
+To check syntax, find problems, and enforce code style
+JavaScript modules (import/export)
+None of these
+No
+Node
+Use a popular style guide
+Airbnb: https://github.com/airbnb/javascript
+JavaScript
+Yes
+npm
 ```
 
 <br />
