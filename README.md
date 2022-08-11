@@ -84,6 +84,34 @@ Airbnb: https://github.com/airbnb/javascript
 JavaScript
 Yes
 npm
+![Captura de ecrã de 2022-08-11 16-26-14](https://user-images.githubusercontent.com/13952621/184224097-acb4f86f-ed60-414e-bce9-ac2b129731ab.png)
+```
+
+Configuração do vscode, atalho 'Crtl,', editar o settings.json, adicionando as seguintes linhas
+```shell
+"eslint.autoFixOnSave": true,
+    "eslint.packageManager": "yarn",
+    "eslint.validate": [
+    {
+        "language": "javascript",
+        "autoFix": true,
+    },
+    {
+        "language": "javascriptreact",
+        "autoFix": true,
+    },
+    {
+        "language": "typescript",
+        "autoFix": true,
+    },
+    {
+        "language": "typescriptreact",
+        "autoFix": true,
+    }
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 ```
 
 <br />
