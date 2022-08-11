@@ -1,0 +1,8 @@
+{
+  "name": "app_nodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jcleston/app-nodejs.git",
+  "author": "jcleston <janes.cleston.silva@gmail.com>",
+  "license": "MIT"
+}

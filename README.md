@@ -43,3 +43,7 @@ $ mkdir nome_do_projeto
 $ cd nome_do_projeto
 ```
 
+Iniciar com o yarn
+```shell
+$ yarn init -y
+```
