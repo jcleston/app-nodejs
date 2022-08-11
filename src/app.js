@@ -3,6 +3,9 @@
 // Importando o express
 const express = require("express");
 
+// Importando o arquivo de rotas
+const routes = require("./routes");
+
 // Criando a class App
 class App{
 
@@ -18,6 +21,14 @@ class App{
 
         // Para manipular json
         this.server.use(express.json());
+
+    }
+
+    // Para manipular as rotas
+    routes(){
+
+        // Para usar as rotas
+        this.server.use(routes);
         
     }
 }
