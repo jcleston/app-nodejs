@@ -101,4 +101,4 @@ class UsuariosController {
 }
 
 // Exportando a classe UsuariosController
-module.exports = new UsuariosController();
+export default new UsuariosController();

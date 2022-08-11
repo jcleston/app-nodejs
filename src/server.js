@@ -1,5 +1,5 @@
 // Importando o server
-const app = require("./app");
+import app from "./app";
 
 // Definindo a porta para a aplicação
 app.listen(3000);

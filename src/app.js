@@ -1,10 +1,10 @@
 // Arquivo de inicio da aplicação
 
 // Importando o express
-const express = require("express");
+import express from "express";
 
 // Importando o arquivo de rotas
-const routes = require("./routes");
+import routes from "./routes";
 
 // Criando a class App
 class App {
@@ -41,5 +41,5 @@ class App {
 
 // Instanciando a classe App e
 // Exportando a variável server do App
-module.exports = new App().server;
+export default new App().server;
 

@@ -1,11 +1,11 @@
 // Importando o router do express
-const { Router } = require("express");
+import { Router } from "express";
+
+// Importando a classe UsuariosController
+import usuarios from "./app/controllers/UsuariosControllers";
 
 // Criando/Instanciando a rota
 const routes = new Router();
-
-// Importando a classe UsuariosController
-const usuarios = require("./app/controllers/UsuariosControllers");
 
 // Criando a rota index para retornar todos os usuarios
 routes.get("/usuarios", usuarios.index);
@@ -24,4 +24,4 @@ routes.delete("/usuarios/:id", usuarios.delete);
 
 
 // Exportando as rotas
-module.exports = routes;
+export default routes;
