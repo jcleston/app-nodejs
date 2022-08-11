@@ -18,8 +18,9 @@
     * [nodejs](#nodejs)
     * [yarn](#yarn)
  * [Criação do projeto](#criação-do-projeto)
- * [Adicionando bibliotecas](#adicionando-bibliotecas)
+ * [Adição de bibliotecas](#adição-de-bibliotecas)
     * [express](#express)
+* [Execução](#execução)
       
 <!--te-->
 <br /><br />
@@ -45,8 +46,15 @@ Iniciar com o yarn
 $ yarn init -y
 ```
 
-## Adicionando bibliotecas
+## Adição de bibliotecas
 ## express
 ```shell
 $ yarn add express
 ```
+## Execução
+Rode o comando do terminal no diretório raiz do projeto
+```shell
+$ node index.js
+```
+Acesse o endereço no navegador
+http://localhost:3000/hello
