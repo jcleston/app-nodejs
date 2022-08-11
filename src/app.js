@@ -39,9 +39,7 @@ class App{
     }
 }
 
-// Instanciando a classe App
-const app = new App();
-
+// Instanciando a classe App e
 // Exportando a variável server do App
-module.exports = app;
+module.exports = new App().server;
 
