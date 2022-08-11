@@ -15,12 +15,20 @@ class UsuariosController {
 
     // Método para recuperar um usuario
     show(req, res) {
+
+        // Resgatando o parâmetro id do registro e transformando de string para int
         const id = parseInt(req.params.id);
-        const usuarios = this.usuarios.find(item => item.id === id);
+
+        // Resgatando o usuario
+        const usuario = this.usuarios.find(item => item.id === id);
+
+        // Construindo o status
         const status = usuarios ? 200 : 404;
 
+        // Para debugar o resultado
         console.debug("GET :: /usuarios/:id", usuarios);
 
+        // Retornando o status e o resultado
         return res.status(status).json(usuarios);
     }
 
