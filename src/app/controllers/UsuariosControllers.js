@@ -1,8 +1,8 @@
 // Criando lista de usuarios
 let usuarios = [
-    { id: 1, nome: "teste1" },
-    { id: 2, nome: "teste2" },
-    { id: 3, nome: "teste3" }
+    { id: 1, nome: "teste1", senha: "123" },
+    { id: 2, nome: "teste2", senha: "456" },
+    { id: 3, nome: "teste3", senha: "789" }
 ];
 
 // Criando a classe usuarios
@@ -20,21 +20,21 @@ class UsuariosController {
         const id = parseInt(req.params.id);
 
         // Resgatando o usuario
-        const usuario = this.usuarios.find(item => item.id === id);
+        const usuario = usuarios.find(item => item.id === id);
 
         // Construindo o status
-        const status = usuarios ? 200 : 404;
+        const status = usuario ? 200 : 404;
 
         // Para debugar o resultado
         console.debug("GET :: /usuarios/:id", usuarios);
 
         // Retornando o status e o resultado
-        return res.status(status).json(usuarios);
+        return res.status(status).json(usuario);
     }
 
     // Método para criar um usuario
     create(req, res) {
-
+        
     }
 
     // Método para atualizar um usuario
