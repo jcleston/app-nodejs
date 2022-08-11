@@ -41,3 +41,7 @@ class App{
 
 // Instanciando a classe App
 const app = new App();
+
+// Exportando a variável server do App
+module.exports = app;
+
