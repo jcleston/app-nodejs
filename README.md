@@ -20,6 +20,7 @@
  * [Criação do projeto](#criação-do-projeto)
  * [Adição de bibliotecas](#adição-de-bibliotecas)
     * [express](#express)
+    * [nodemon](#nodemon)
 * [Execução](#execução)
       
 <!--te-->
@@ -53,6 +54,12 @@ $ yarn init -y
 ```shell
 $ yarn add express
 ```
+
+## nodemon
+```shell
+$ yarn add nodemon -D
+```
+
 <br />
 
 ## Execução
