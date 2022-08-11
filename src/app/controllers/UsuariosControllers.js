@@ -34,7 +34,21 @@ class UsuariosController {
 
     // Método para criar um usuario
     create(req, res) {
-        
+
+        // Recebendo os parâmetros de usuario
+        const { nome, senha } = req.body;
+
+        // Pegando o id do último registro + 1
+        const id = usuarios[usuarios.length - 1].id + 1;
+
+        // Criando novo usuario
+        const newUsuario = { id, nome, senha };
+
+        // Incluindo novo usuario
+        usuarios.push(newUsuario);
+
+        // Retornando o status e o resultado
+        return res.status(201).json(newUsuario);
     }
 
     // Método para atualizar um usuario
