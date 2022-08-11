@@ -1,18 +1,16 @@
+// Criando lista de usuarios
+let usuarios = [
+    { id: 1, nome: "teste1" },
+    { id: 2, nome: "teste2" },
+    { id: 3, nome: "teste3" }
+];
+
 // Criando a classe usuarios
 class UsuariosController {
 
-    // Criando lista de usuarios
-    constructor(){
-        this.usuarios = [
-            {id: 1, nome: "teste1"},
-            {id: 2, nome: "teste2"},
-            {id: 3, nome: "teste3"}
-        ];
-    }
-
     // Método para listar todos os usuarios
     index(req, res) {
-
+        return res.json(usuarios);
     }
 
     // Método para recuperar um usuario
