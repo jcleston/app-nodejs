@@ -13,6 +13,12 @@ class App{
     constructor(){
         // Adicionando a propriedade server
         this.server = express();
+
+        // Adicionando o método middleware
+        this.middlewares();
+
+        // Adicionando o método das rotas
+        this.routes();
     }
 
     // Criando o método middleware
@@ -29,7 +35,7 @@ class App{
 
         // Para usar as rotas
         this.server.use(routes);
-        
+
     }
 }
 
