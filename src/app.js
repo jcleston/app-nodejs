@@ -39,3 +39,5 @@ class App{
     }
 }
 
+// Instanciando a classe App
+const app = new App();
