@@ -21,6 +21,7 @@
  * [Adição de bibliotecas](#adição-de-bibliotecas)
     * [express](#express)
     * [nodemon](#nodemon)
+    * [sucrase](#sucrase)
 * [Execução](#execução)
       
 <!--te-->
@@ -58,6 +59,11 @@ $ yarn add express
 ## nodemon
 ```shell
 $ yarn add nodemon -D
+```
+
+## sucrase
+```shell
+$ yarn add sucrase -D
 ```
 
 <br />
