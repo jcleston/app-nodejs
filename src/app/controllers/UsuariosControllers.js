@@ -54,6 +54,26 @@ class UsuariosController {
     // Método para atualizar um usuario
     update(req, res) {
 
+        // Resgatando o parâmetro id do registro e transformando de string para int
+        const id = parseInt(req.params.id);
+
+        // Recebendo os parâmetros de usuario
+        const { nome, senha } = req.body;
+
+        // Retornando o registro de acordo com o id
+        const index = usuarios.findIndex(item => item.id === id);
+
+        // Verificando o status
+        const status = index >= 0 ? 200 : 404;
+
+        // Controlando a alteração
+        if (index >= 0) {
+            usuarios[index] = { id: parseInt(id), nome, senha }
+        }
+
+        // Retornando o resultado
+        return res.status(status).json(usuarios[index]);
+
     }
 
     // Método para excluir um usuario
