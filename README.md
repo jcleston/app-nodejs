@@ -1,6 +1,6 @@
 <p align="center">
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/jcleston/app-nodejs">  
-  <a href="https://github.com/jcleston/app-nodejs/commits/master">
+  <a href="https://github.com/jcleston/app-nodejs/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jcleston/app-nodejs">
   </a>
    <a href="https://github.com/jcleston/app-nodejs/stargazers">
@@ -32,6 +32,7 @@ https://nodejs.org
 ## yarn
 https://yarnpkg.com
 
+<br />
 
 ## Criação do projeto
 
@@ -45,12 +46,15 @@ Iniciar com o yarn
 ```shell
 $ yarn init -y
 ```
+<br />
 
 ## Adição de bibliotecas
 ## express
 ```shell
 $ yarn add express
 ```
+<br />
+
 ## Execução
 Rode o comando do terminal no diretório raiz do projeto
 ```shell
@@ -58,3 +62,6 @@ $ node index.js
 ```
 Acesse o endereço no navegador
 http://localhost:3000/hello
+
+<br />
+
