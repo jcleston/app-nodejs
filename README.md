@@ -22,6 +22,7 @@
     * [express](#express)
     * [nodemon](#nodemon)
     * [sucrase](#sucrase)
+    * [eslint](#eslint)
 * [Execução](#execução)
       
 <!--te-->
@@ -64,6 +65,11 @@ $ yarn add nodemon -D
 ## sucrase
 ```shell
 $ yarn add sucrase -D
+```
+
+## eslint
+```shell
+$ yarn add eslint -D
 ```
 
 <br />
