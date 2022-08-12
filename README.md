@@ -23,6 +23,7 @@
     * [nodemon](#nodemon)
     * [sucrase](#sucrase)
     * [eslint](#eslint)
+    * [prettier](#prettier)
 * [Execução](#execução)
       
 <!--te-->
@@ -112,6 +113,11 @@ Configuração do vscode, atalho 'Crtl,', editar o settings.json, adicionando as
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     }
+```
+
+## prettier
+```shell
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 ```
 
 <br />
