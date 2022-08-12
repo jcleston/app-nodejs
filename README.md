@@ -117,7 +117,12 @@ Configuração do vscode, atalho 'Crtl,', editar o settings.json, adicionando as
 
 ## prettier
 ```shell
-yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+$ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
+```
+
+Comando para rodar o eslint no diretório
+```shell
+$ yarn eslint --fix src --ext .js
 ```
 
 <br />

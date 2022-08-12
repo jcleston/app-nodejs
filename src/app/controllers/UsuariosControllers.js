@@ -15,7 +15,7 @@ class UsuariosController {
   // Método para recuperar um usuario
   show(req, res) {
     // Resgatando o parâmetro id do registro e transformando de string para int
-    const id = parseInt(req.params.id);
+    const id = parseInt(req.params.id, 10);
 
     // Resgatando o usuario
     const usuario = usuarios.find((item) => item.id === id);
@@ -24,7 +24,7 @@ class UsuariosController {
     const status = usuario ? 200 : 404;
 
     // Para debugar o resultado
-    console.debug("GET :: /usuarios/:id", usuarios);
+    console.warn("GET :: /usuarios/:id", usuarios);
 
     // Retornando o status e o resultado
     return res.status(status).json(usuario);
@@ -51,7 +51,7 @@ class UsuariosController {
   // Método para atualizar um usuario
   update(req, res) {
     // Resgatando o parâmetro id do registro e transformando de string para int
-    const id = parseInt(req.params.id);
+    const id = parseInt(req.params.id, 10);
 
     // Recebendo os parâmetros de usuario
     const { nome, senha } = req.body;
@@ -64,7 +64,7 @@ class UsuariosController {
 
     // Controlando a alteração
     if (index >= 0) {
-      usuarios[index] = { id: parseInt(id), nome, senha };
+      usuarios[index] = { id: parseInt(id, 10), nome, senha };
     }
 
     // Retornando o resultado
@@ -74,7 +74,7 @@ class UsuariosController {
   // Método para excluir um usuario
   delete(req, res) {
     // Resgatando o parâmetro id do registro e transformando de string para int
-    const id = parseInt(req.params.id);
+    const id = parseInt(req.params.id, 10);
 
     // Retornando o registro de acordo com o id
     const index = usuarios.findIndex((item) => item.id === id);
