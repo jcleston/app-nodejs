@@ -1,10 +1,10 @@
 // Arquivo de inicio da aplicação
 
 // Importando o express
-import express from 'express';
+import express from "express";
 
 // Importando o arquivo de rotas
-import routes from './routes';
+import routes from "./routes";
 
 // Criando a class App
 class App {

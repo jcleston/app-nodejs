@@ -1,8 +1,8 @@
 // Criando lista de usuarios
 const usuarios = [
-  { id: 1, nome: 'teste1', senha: '123' },
-  { id: 2, nome: 'teste2', senha: '456' },
-  { id: 3, nome: 'teste3', senha: '789' },
+  { id: 1, nome: "teste1", senha: "123" },
+  { id: 2, nome: "teste2", senha: "456" },
+  { id: 3, nome: "teste3", senha: "789" },
 ];
 
 // Criando a classe usuarios
@@ -24,7 +24,7 @@ class UsuariosController {
     const status = usuario ? 200 : 404;
 
     // Para debugar o resultado
-    console.debug('GET :: /usuarios/:id', usuarios);
+    console.debug("GET :: /usuarios/:id", usuarios);
 
     // Retornando o status e o resultado
     return res.status(status).json(usuario);
