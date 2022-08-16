@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/jcleston/app-nodejs">  
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/jcleston/app-nodejs">
   <a href="https://github.com/jcleston/app-nodejs/commits/main">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/jcleston/app-nodejs">
   </a>
@@ -24,8 +24,9 @@
     * [sucrase](#sucrase)
     * [eslint](#eslint)
     * [prettier](#prettier)
+    * [sequelize](#sequelize)
 * [Execução](#execução)
-      
+
 <!--te-->
 <br /><br />
 
@@ -123,6 +124,11 @@ $ yarn add prettier eslint-config-prettier eslint-plugin-prettier -D
 Comando para rodar o eslint no diretório
 ```shell
 $ yarn eslint --fix src --ext .js
+```
+
+## sequelize
+```shell
+$ yarn add sequelize
 ```
 
 <br />
