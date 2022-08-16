@@ -129,7 +129,9 @@ $ yarn eslint --fix src --ext .js
 ## sequelize
 ```shell
 $ yarn add sequelize
+$ yarn add sequelize-cli -D
 ```
+https://sequelize.org/
 
 <br />
 

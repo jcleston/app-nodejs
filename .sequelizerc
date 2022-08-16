@@ -1,0 +1,18 @@
+// Importando a biblioteca path
+const { resolve } = require("path");
+
+// Exportando as configurações
+module.exports = {
+
+  // Compatibilizando o formato de diretórios nos S.Os
+  "config": resolve(__dirname, "src", "config", "database.js"),
+
+  // Configurando o models
+  "models-path": resolve(__dirname, "src", "app", "models"),
+
+  // Configurando o migrations
+  "migrations-path": resolve(__dirname, "src", "database", "migrations"),
+
+  // Configurando o seeders
+  "seeders-path": resolve(__dirname, "src", "database", "seeds"),
+};
