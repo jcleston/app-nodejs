@@ -25,6 +25,7 @@
     * [eslint](#eslint)
     * [prettier](#prettier)
     * [sequelize](#sequelize)
+    * [postgresql](#postgresql)
 * [Execução](#execução)
 
 <!--te-->
@@ -134,6 +135,12 @@ $ yarn add sequelize-cli -D
 https://sequelize.org/
 
 <br />
+
+
+## postgresql
+```shell
+$ yarn add pg pg-hstore
+```
 
 ## Execução
 Rode o comando do terminal no diretório raiz do projeto
