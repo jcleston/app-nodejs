@@ -136,7 +136,14 @@ https://sequelize.org/
 
 Comandos:
 ```shell
+// Cria a migration
 $ yarn sequelize migration:create --name=ação-tabela
+
+// Executa a migration no banco de dados
+$ yarn sequelize db:migrate
+
+// Desfaz a migration no banco de dados
+$ yarn sequelize db:migrate:undo:all
 ```
 
 <br />
