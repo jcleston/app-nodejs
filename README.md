@@ -134,6 +134,11 @@ $ yarn add sequelize-cli -D
 ```
 https://sequelize.org/
 
+Comandos:
+```shell
+$ yarn sequelize migration:create --name=ação-tabela
+```
+
 <br />
 
 
