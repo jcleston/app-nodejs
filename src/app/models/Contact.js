@@ -2,7 +2,7 @@
 import Sequelize, { Model } from "sequelize";
 
 // Criando a classe Customer
-class Customer extends Model {
+class Contact extends Model {
   // Criando o método de inicialização
   static init(sequelize) {
     super.init(
@@ -19,8 +19,8 @@ class Customer extends Model {
   }
 
   static associate(models) {
-    this.hasMany(models.Contact);
+    this.belongsTo(models.Customer, { foreignKey: "customer_id" });
   }
 }
 
-export default Customer;
+export default Contact;
