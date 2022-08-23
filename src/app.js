@@ -6,6 +6,9 @@ import express from "express";
 // Importando o arquivo de rotas
 import routes from "./routes";
 
+// Importando os inits
+import "./database";
+
 // Criando a class App
 class App {
   // Criando o construtor

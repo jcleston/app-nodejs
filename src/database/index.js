@@ -11,6 +11,8 @@ const models = [Customer, Contact, User];
 class Database {
   constructor() {
     this.connection = new Sequelize(config);
+
+    this.init();
   }
 
   init() {
@@ -18,4 +20,4 @@ class Database {
   }
 }
 
-export default Database;
+export default new Database();

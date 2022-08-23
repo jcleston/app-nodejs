@@ -1,3 +1,5 @@
+import User from "../models/User";
+
 // Criando lista de usuarios
 const usuarios = [
   { id: 1, nome: "teste1", senha: "123" },
@@ -8,8 +10,15 @@ const usuarios = [
 // Criando a classe usuarios
 class UsuariosController {
   // Método para listar todos os usuarios
-  index(req, res) {
-    return res.json(usuarios);
+  // index(req, res) {
+  //   return res.json(usuarios);
+  // }
+  async index(req, res) {
+    const data = await User.findAll({
+      limit: 1000,
+    });
+
+    return res.json(data);
   }
 
   // Método para recuperar um usuario
